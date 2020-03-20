@@ -5,7 +5,7 @@ public class Test {
 		LinkedList<Integer> l = new LinkedList<Integer>();
 
 		for (int i=0; i<10; i++) {
-			l.add(new Integer(i));
+			l.add(Integer.valueOf(i));
 		}
 
 		Iterator<Integer> theIterator = l.iterator();
@@ -15,7 +15,7 @@ public class Test {
 
 		int sizeOfTest = 10000;
 		for (int i=11; i<=sizeOfTest; i++) {
-			l.add(new Integer(i));
+			l.add(Integer.valueOf(i));
 		}
 
 		Integer dummy;
